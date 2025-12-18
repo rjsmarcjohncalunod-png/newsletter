@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Del Rosa LaunchPad - Investor Update</title>
+<style>
+:root {
+    --brand-green: #1a432e;
+    --brand-yellow: #f8db62;
+    --brand-light: #fffceb;
+    --bg-light: #f9f9f9;
+    --bg-dark: #e0e0e0;
+    --text-light: #000000;
+    --text-dark: #1d1d1f;
+    --text-muted: #636e72;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--bg-dark);
+        color: var(--text-light);
+    }
+    .container {
+        background: #1b1b1b;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+}
+.logo { height: 60px; }
+.header a.logo-link { display: inline-block; transition: transform 0.3s ease, opacity 0.3s ease; }
+.header a.logo-link:hover { transform: scale(1.05); opacity: 0.9; cursor: pointer; }
+
+/* Navigation */
+.header-nav { margin-left: auto; }
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: var(--brand-green);
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.nav-list li a:hover { background-color: var(--brand-green); color: #fff; }
+
+/* Header Accent */
+.header-accent {
+    background-color: var(--brand-yellow);
+    display: inline-block;
+    padding: 15px 60px 15px 30px;
+    border-radius: 0 25px 25px 0;
+    margin: 20px 0 20px 30px;
+    font-weight: 700;
+}
+.header-accent h1 { margin: 0; font-size: 1.2rem; text-transform: uppercase; }
+.header-accent p { margin: 0; font-size: 0.9rem; font-weight: 600; }
+
+/* Main Content */
+.main-text { padding: 25px 30px; color: #444; font-size: 1rem; }
+
+/* Featured Image */
+.featured-image { 
+    width: 90%;
+    margin: 20px auto 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: block;
+}
+
+/* Footer */
+.footer {
+    background: #fff;
+    padding: 35px 30px;
+    border-top: 1px solid #eee;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 2px solid var(--brand-green);
+    padding-bottom: 20px;
+}
+.contact-info div { font-size: 0.95rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header { flex-direction: column; gap: 15px; }
+    .nav-list { justify-content: center; gap: 8px; }
+}
+@media (max-width: 480px) {
+    .logo { height: 50px; }
+    .nav-list li a { padding: 5px 8px; font-size: 0.85rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <a href="index.html" class="logo-link">
+            <img src="img/launchpad.png" alt="LaunchPad Logo" class="logo">
+        </a>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li><a href="gala.html">Gala</a></li>
+                <li><a href="growth.html">Growth Fund</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="luncha.html">Lucha</a></li>
+              <li><a href="launch.html">Investor Update</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header Accent -->
+    <div class="header-accent">
+        <h1>DEL ROSA LAUNCHPAD</h1>
+        <p>INVESTOR UPDATE</p>
+    </div>
+
+    <!-- Main Content -->
+    <section class="main-text">
+        <p>
+            Our <strong>Del Rosa LaunchPad</strong> continues to advance on schedule and is entering a critical phase of design, alignment, and value creation. Over the past quarter, we completed key steps in the site plan, advanced modular coordination with S2A, and strengthened our working relationship with the City's Planning Department — de-risking the entitlement path.
+        </p>
+        <p>
+            This trajectory reduces entitlement risk, increases underlying land value, and reinforces Del Rosa as the flagship proof of concept for the LaunchPad model — integrating housing, small business spaces, and workforce opportunities into one scalable community.
+        </p>
+    </section>
+
+    <!-- Featured Image -->
+    <img src="img/pic10.png" alt="Del Rosa Main Rendering" class="featured-image">
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="contact-info">
+            <div><strong>Robert Carrillo</strong><br>President, LaunchPad Collective</div>
+            <div><strong>Email</strong><br>robert@launchpadcollective.org</div>
+            <div><strong>Phone</strong><br>909-521-8432</div>
+        </div>
+        <p style="text-align:center; font-size:0.8rem; margin-top:20px;">
+            © 2025 The LaunchPad Collective, Inc. All rights reserved.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

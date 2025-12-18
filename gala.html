@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LaunchPad Gala 2025 Highlights</title>
+<style>
+:root {
+    --brand-green: #1a432e;
+    --brand-yellow: #f8db62;
+    --brand-light: #fffceb;
+    --bg-light: #f9f9f9;
+    --bg-dark: #e0e0e0;
+    --text-light: #000000;
+    --text-dark: #1d1d1f;
+    --text-muted: #636e72;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--bg-dark);
+        color: var(--text-light);
+    }
+    .container {
+        background: #1b1b1b;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+}
+.logo {
+    height: 60px;
+}
+.header a.logo-link {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.header a.logo-link:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Navigation */
+.header-nav {
+    margin-left: auto;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: var(--brand-green);
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.nav-list li a:hover {
+    background-color: var(--brand-green);
+    color: #fff;
+}
+
+/* Header Accent */
+.header-accent {
+    background-color: var(--brand-yellow);
+    display: inline-block;
+    padding: 15px 60px 15px 30px;
+    border-radius: 0 25px 25px 0;
+    margin: 20px 0 20px 30px;
+    font-weight: 700;
+}
+.header-accent h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.header-accent p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-banner {
+    width: 90%;
+    margin: 0 auto 40px auto;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #e9e4d9;
+    padding: 80px 20px;
+    text-align: center;
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('img/hero_bg.png');
+    background-size: cover;
+    background-position: center;
+}
+.hero-banner h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.8rem;
+    margin: 10px 0;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.hero-banner .tagline {
+    letter-spacing: 5px;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.logo-small {
+    margin-top: 30px;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/* Main Text */
+.main-text {
+    padding: 25px 30px;
+    color: #444;
+    font-size: 1rem;
+}
+
+/* Gallery Grid */
+.gallery-container {
+    width: 90%;
+    margin: 0 auto 40px auto;
+}
+.top-grid {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.side-stack {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.gallery-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer (from newsletter) */
+.footer {
+    background: #fff;
+    padding: 35px 30px;
+    border-top: 1px solid #eee;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 2px solid var(--brand-green);
+    padding-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-list {
+        justify-content: center;
+        gap: 8px;
+    }
+    .top-grid, .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-banner h2 {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 480px) {
+    .logo {
+        height: 50px;
+    }
+    .nav-list li a {
+        padding: 5px 8px;
+        font-size: 0.9rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <a href="index.html" class="logo-link">
+            <img src="img/launchpad.png" alt="LaunchPad Logo" class="logo">
+        </a>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li><a href="gala.html">Gala</a></li>
+                <li><a href="growth.html">Growth Fund</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="luncha.html">Lucha</a></li>
+        <li><a href="launch.html">Investor Update</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header Accent -->
+    <div class="header-accent">
+        <h1>LaunchPad Gala</h1>
+        <p>2025 HIGHLIGHTS</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-banner">
+        <p style="font-size: 0.9rem; letter-spacing: 2px;">THE</p>
+        <h2>LaunchPad Gala 2025</h2>
+        <p class="tagline">THE RISE OF A NEW SAN BERNARDINO</p>
+        <div class="logo-small">
+            LAUNCHPAD<br>COLLECTIVE
+        </div>
+    </section>
+
+    <!-- Main Text -->
+    <section class="main-text">
+        <p>We are deeply grateful to everyone who attended the <strong>LaunchPad Gala: The Rise of a New San Bernardino</strong> on Saturday, November 8th. It was a wonderful evening, celebrating the progress we've made so far together and the importance of partnerships with our community partners that continue to drive our mission forward.</p>
+    </section>
+
+    <!-- Gallery -->
+    <div class="gallery-container">
+        <div class="top-grid">
+            <div class="main-photo">
+                <img src="img/pic1.png" alt="Large group photo">
+            </div>
+            <div class="side-stack">
+                <img src="img/pic2.png" alt="Small group photo top">
+                <img src="img/pic3.png" alt="Small group photo bottom">
+            </div>
+        </div>
+
+        <div class="bottom-grid">
+            <img src="img/pic4.png" alt="Gala highlight 1">
+            <img src="img/pic5.png" alt="Gala highlight 2">
+            <img src="img/pic6.png" alt="Gala highlight 3">
+        </div>
+    </div>
+
+    <!-- Footer (from newsletter) -->
+    <div class="footer">
+        <div class="contact-info">
+            <div><strong>Robert Carrillo</strong><br>President, LaunchPad Collective</div>
+            <div><strong>Email</strong><br>robert@launchpadcollective.org</div>
+            <div><strong>Phone</strong><br>909-521-8432</div>
+        </div>
+        <p style="text-align:center; font-size:0.8rem; margin-top:20px;">
+            © 2025 The LaunchPad Collective, Inc. All rights reserved.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
